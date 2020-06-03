@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navbar title="The Timelapse App"/>
-        <Route exact path="/home" render={() => <Home title="This is homepage" />} />
+        <Route exact path="/" render={() => <Home title="This is homepage" />} />
         <Route path="/features" render={() => <Features title="This is feature page" />} />
       </div>
     </BrowserRouter>
