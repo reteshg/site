@@ -1,7 +1,12 @@
 import React from 'react';
 
 const Features = (props) => (
-    <h1>{props.title}</h1>
+    <p>
+        <h1>{props.title}</h1>    
+        <h1>{props.title}</h1>    
+        <h1>{props.title}</h1>    
+        <h1>{props.title}</h1>    
+        </p>
 );
 
 export default Features;
