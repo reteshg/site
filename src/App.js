@@ -7,11 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <BrowserRouter>
       <div className="App">
         <Navigation title="The Timelapse App"/>
-        <Route exact path="/" render={() => <Home title="This is homepage" />} />
-        <Route path="/features" render={() => <Features title="This is feature page" />} />
+        <Route exact path="/" render={() => <Home title="This is homepage" active="active" />} />
+        <Route path="/features" render={() => <Features title="This is feature page" active="active" />} />
       </div>
     </BrowserRouter>
   );

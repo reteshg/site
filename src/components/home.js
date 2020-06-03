@@ -1,12 +1,14 @@
 import React from 'react';
 
 const Home = (props) => (
-    <p>
+   
+
+    <span>
         <h1>{props.title}</h1>    
         <h1>{props.title}</h1>    
         <h1>{props.title}</h1>    
         <h1>{props.title}</h1>    
-        </p>
+        </span>      
 );
 
 export default Home;
