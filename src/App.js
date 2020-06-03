@@ -1,16 +1,16 @@
 import React from 'react';
-import {BorwserRouter, BrowserRouter} from 'react-router-dom';
+import {BrowserRouter, Route} from 'react-router-dom';
 import Navbar from './components/navbar';
 import Home from './components/home';
 import Features from './components/features';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div className="App">
         <Navbar title="The Timelapse App"/>
-        <Home title="Homepage New"/>
-        <Features/>
+        <Route exact path="/home" render={() => <Home title="This is homepage" />} />
+        <Route path="/features" render={() => <Features title="This is feature page" />} />
       </div>
     </BrowserRouter>
   );

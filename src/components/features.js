@@ -1,7 +1,7 @@
 import React from 'react';
 
-const Features = () => (
-    <h1>Features</h1>
+const Features = (props) => (
+    <h1>{props.title}</h1>
 );
 
 export default Features;
