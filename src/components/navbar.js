@@ -5,7 +5,7 @@ const Navbar = (props) => (
       <nav>
         <h2>{props.title}</h2>
         <ul>
-          <li><NavLink exact to="/home">Home</NavLink></li>
+          <li><NavLink exact to="/">Home</NavLink></li>
           <li><NavLink to="/features">Features</NavLink></li>
           <li>FAQs</li>
         </ul>
