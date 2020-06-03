@@ -6,7 +6,7 @@ const Navigation = (props) => (
 
   <Navbar fixed="top" bg="light">
     <Navbar.Brand>{props.title}</Navbar.Brand>
-      <Nav className="justify-content-end">
+      <Nav className="mr-auto">
         <Nav.Link href="/">Home</Nav.Link>
         <Nav.Link href="/features">Features</Nav.Link>
         <Nav.Link href="/faqs">Faqs</Nav.Link>

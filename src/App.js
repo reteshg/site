@@ -10,8 +10,8 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Navigation title="The Timelapse App"/>
-        <Route exact path="/" render={() => <Home title="This is homepage" active="active" />} />
-        <Route path="/features" render={() => <Features title="This is feature page" active="active" />} />
+        <Route exact path="/" render={() => <Home title="This is homepage" />} />
+        <Route path="/features" render={() => <Features title="This is feature page" />} />
       </div>
     </BrowserRouter>
   );
