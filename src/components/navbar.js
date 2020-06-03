@@ -1,8 +1,8 @@
 import React from 'react';
 
-const Navbar = () => (
+const Navbar = (props) => (
       <nav>
-        <h2>The Timelapse App</h2>
+        <h2>{props.title}</h2>
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Features</a></li>
