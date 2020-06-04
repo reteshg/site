@@ -1,34 +1,33 @@
 import React from 'react';
-import {Navbar,Nav} from 'react-bootstrap';
+import {Container,Navbar,Nav,NavItem} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
 const Navigation = (props) => (
-
-  <Navbar fixed="top" bg="light">
-    <Navbar.Brand to="/">{props.title}</Navbar.Brand>
-      <Nav className="mr-auto">
+<Container>
+  <Navbar fixed="top" bg="light" expand={'sm'}>
+    
+    <Navbar.Brand as={Link} to="/">{props.title}</Navbar.Brand>
+    
+    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar.Collapse>
+    <Nav className="mr-auto">
+      <NavItem>
         <Nav.Link as={Link} exact to="/">Home</Nav.Link>
+      </NavItem>
+      
+      <NavItem>
         <Nav.Link as={Link} to="/features">Features</Nav.Link>
-        
-        
-      </Nav>
-  </Navbar>
+      </NavItem>  
 
-      /*
+      <NavItem>
+        <Nav.Link as={Link} to="/features">FAQs</Nav.Link>
+      </NavItem>  
+    </Nav>
+    </Navbar.Collapse>
+
+  </Navbar>
+  </Container>
       
-      
-      <Nav.Link href="/">Home</Nav.Link>
-        <Nav.Link href="/features">Features</Nav.Link>
-        <Nav.Link href="/faqs">Faqs</Nav.Link>
-      
-      <nav>
-        <h2>{props.title}</h2>
-        <ul>
-          <li><NavLink exact to="/">Home</NavLink></li>
-          <li><NavLink to="/features">Features</NavLink></li>
-          <li>FAQs</li>
-        </ul>
-      </nav> */
 
 );
 
