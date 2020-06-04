@@ -5,6 +5,7 @@ import Home from './components/home';
 import Features from './components/features';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
