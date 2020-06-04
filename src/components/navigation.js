@@ -1,15 +1,15 @@
 import React from 'react';
 import {Navbar,Nav} from 'react-bootstrap';
-import {NavLink} from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 const Navigation = (props) => (
 
   <Navbar fixed="top" bg="light">
-    <Navbar.Brand>{props.title}</Navbar.Brand>
+    <Navbar.Brand to="/">{props.title}</Navbar.Brand>
       <Nav className="mr-auto">
-        <Nav.Link><NavLink exact to="/">Home</NavLink></Nav.Link>
-        <Nav.Link><NavLink to="/features">Features</NavLink></Nav.Link>
-        <Nav.Link><NavLink to="/faqs">Faqs</NavLink></Nav.Link>
+        <Nav.Link as={Link} exact to="/">Home</Nav.Link>
+        <Nav.Link as={Link} to="/features">Features</Nav.Link>
+        
         
       </Nav>
   </Navbar>
