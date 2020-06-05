@@ -3,24 +3,24 @@ import {Container,Navbar,Nav,NavItem} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
 const Navigation = (props) => (
-<Container>
-  <Navbar fixed="top" bg="light" expand={'sm'}>
+<Container fluid>
+  <Navbar bg="light" expand={'sm'} fixed="top" collapseOnSelect>
     
     <Navbar.Brand as={Link} to="/">{props.title}</Navbar.Brand>
     
-    <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+    <Navbar.Toggle/>
     <Navbar.Collapse>
     <Nav className="mr-auto">
       <NavItem>
-        <Nav.Link as={Link} exact to="/">Home</Nav.Link>
+        <Nav.Link eventkey={1} as={Link} exact to="/">Home</Nav.Link>
       </NavItem>
       
       <NavItem>
-        <Nav.Link as={Link} to="/features">Features</Nav.Link>
+        <Nav.Link eventkey={2} as={Link} to="/features">Features</Nav.Link>
       </NavItem>  
 
       <NavItem>
-        <Nav.Link as={Link} to="/features">FAQs</Nav.Link>
+        <Nav.Link eventkey={3} as={Link} to="/features">FAQs</Nav.Link>
       </NavItem>  
     </Nav>
     </Navbar.Collapse>
