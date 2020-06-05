@@ -1,30 +1,19 @@
 import React from 'react';
-import {Container} from 'react-bootstrap';
+import {Container,Row} from 'react-bootstrap';
 
 const Home = (props) => (
    
 
 <Container fluid>
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
-        <h1>{props.title}</h1>    
+
+
+<Row className="justify-content-center">
+<div style={{position: 'absolute', left: '50%', top: '50%',transform: 'translate(-50%, -50%)'}}>
+ss
+</div>
+
+</Row>
+
 
         </Container>
 );

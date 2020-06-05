@@ -4,13 +4,13 @@ import {Link} from 'react-router-dom';
 
 const Navigation = (props) => (
 <Container fluid>
-  <Navbar bg="light" expand={'sm'} fixed="top" collapseOnSelect>
+  <Navbar collapseOnSelect expand={'sm'} bg="dark" variant="dark" fixed="top" >
     
     <Navbar.Brand as={Link} to="/">{props.title}</Navbar.Brand>
     
-    <Navbar.Toggle/>
-    <Navbar.Collapse>
-    <Nav className="mr-auto">
+    <Navbar.Toggle />
+    <Navbar.Collapse className="justify-content-end">
+    <Nav>
       <NavItem>
         <Nav.Link eventkey={1} as={Link} exact to="/">Home</Nav.Link>
       </NavItem>

@@ -1,12 +1,13 @@
 import React from 'react';
+import {Container} from 'react-bootstrap';
 
 const Features = (props) => (
-    <span>
+<Container fluid>
         <h1>{props.title}</h1>    
         <h1>{props.title}</h1>    
         <h1>{props.title}</h1>    
         <h1>{props.title}</h1>    
-        </span>
+        </Container>
 );
 
 export default Features;
