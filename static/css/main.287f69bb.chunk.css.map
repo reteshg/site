@@ -1,0 +1,1 @@
+{"version":3,"sources":["home.css"],"names":[],"mappings":"AAAA,MACI,kBACJ,CAEA,gBACI,iBAAkB,CAClB,QAAS,CACT,OAAQ,CACR,8BACJ","file":"main.287f69bb.chunk.css","sourcesContent":["video {\n    border-Radius:15px;\n}\n\n.centerAlignDiv{\n    position: absolute;\n    left: 50%;\n    top: 50%;\n    transform: translate(-50%, -50%);\n}"]}
