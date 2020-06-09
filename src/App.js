@@ -3,6 +3,7 @@ import {BrowserRouter, Route} from 'react-router-dom';
 import Navigation from './components/navigation';
 import Home from './components/home';
 import Features from './components/features';
+import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -13,6 +14,9 @@ function App() {
         <Navigation title="The Timelapse App"/>
         <Route exact path="/" render={() => <Home title="This is homepage" />} />
         <Route path="/features" render={() => <Features title="This is feature page" />} />
+      </div>
+      <div>
+      <Footer/>
       </div>
     </BrowserRouter>
   );
