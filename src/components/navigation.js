@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const Navigation = (props) => (
 <Container fluid>
-  <Navbar collapseOnSelect expand={'sm'} bg="dark" variant="dark" fixed="top" >
+  <Navbar collapseOnSelect expand={'sm'|'md'} bg="dark" variant="dark" fixed="top" >
     
     <Navbar.Brand as={Link} to="/">{props.title}</Navbar.Brand>
     
@@ -21,6 +21,9 @@ const Navigation = (props) => (
 
       <NavItem>
         <Nav.Link eventkey={3} as={Link} to="/features">FAQs</Nav.Link>
+      </NavItem>  
+      <NavItem>
+        <Nav.Link eventkey={4} as={Link} to="/download">Download</Nav.Link>
       </NavItem>  
     </Nav>
     </Navbar.Collapse>
