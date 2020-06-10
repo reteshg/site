@@ -20,12 +20,12 @@ const Navigation = (props) => (
         <NavDropdown.Item eventkey={2} as={Link} to="/featureCreateTimelapse">Create Timelapse</NavDropdown.Item>
         <NavDropdown.Item eventkey={3} as={Link} to="/featureVideoSettings">Video Settings</NavDropdown.Item>
         <NavDropdown.Item eventkey={4} as={Link} to="/featureAudioSettings">Audio Settings</NavDropdown.Item>
-        <NavDropdown.Item eventkey={5} as={Link} to="/features">Intro-Credit Slides</NavDropdown.Item>
+        <NavDropdown.Item eventkey={5} as={Link} to="/featureIntroCredit">Intro/Credit Slides</NavDropdown.Item>
         </NavDropdown>
       </NavItem>  
 
       <NavItem>
-        <Nav.Link eventkey={6} as={Link} to="/features">FAQs</Nav.Link>
+        <Nav.Link eventkey={6} as={Link} to="/faqs">FAQs</Nav.Link>
       </NavItem>  
       <NavItem>
         <Nav.Link eventkey={7} as={Link} to="/download"><Badge pill variant="primary">Download</Badge></Nav.Link>
