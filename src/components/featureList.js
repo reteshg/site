@@ -40,7 +40,7 @@ const FeatureList = (props) => (
         <Row>
                 <Col>
                         <p>
-                                <b>Sync Audio:</b> Another amazing feature by the Timelapse App. Simply provide source of your audio file, the app will adjust the length of the audio based on the video lenght. It will also add cfossfading effect at the end of the audio.
+                                <b>Sync Audio:</b> Another amazing feature by the Timelapse App. Simply provide source of your audio file, the app will adjust the length of the audio based on the video length. It will also add crossfading effect at the end of the audio.
                         </p>
                 </Col>
         </Row>
@@ -48,9 +48,10 @@ const FeatureList = (props) => (
                 <Col>
                         <p>
                                 <b>Intro and Credits Slide:</b> You can add "Intro" and "Credits" slide to your video. 
-                                <br/>Intro slide allows you to select an image of your choice and add title and subtiltle to the video. In case no image is selected, a black backgroud will be used.
-                                <br/>Credit slides allows you to add credits to your video on a black background.
-                                <br/>Both the Intro and Credit slides are optional and you may use any anyone of them or can choose to not add any slide to your timelapse video.
+                                <br/><br/>
+                                <p className="leftIndentationP">Intro slide allows you to select an image of your choice and add title and subtiltle to the video. In case no image is selected, a black backgroud will be used.</p>
+                                <p className="leftIndentationP">Credit slides allows you to add credits to your video on a black background.</p>
+                                <p className="leftIndentationP">Both the Intro and Credit slides are optional and you may use any anyone of them or can choose to not add any slide to your timelapse video.</p>
                         </p>
                 </Col>
         </Row>

@@ -6,6 +6,14 @@
     font-size: 30px;
 }
 
+.leftIndentationP{
+    padding-left:10px;
+}
+
+.screenShots{
+    text-align:center;
+}
+
 .txtStyle{
     text-align:center;
 }
