@@ -3,7 +3,7 @@ import {Container,Row,Col,Image} from 'react-bootstrap';
 import './featureComponents.css';
 
 const FeatureCreateTimelapse = (props) => (
-<Container fluid>
+<Container>
         <Row>
                 <Col>
                         <div className="titleRow">{props.title}</div>
@@ -12,7 +12,7 @@ const FeatureCreateTimelapse = (props) => (
         <Row>
                 <Col>
                 <div  className="txtStyle">
-                        The quickest way to create a timelapse video is put all the you images in one folder and click 'Create TImelapse' button. <b>Thats It!!</b>
+                        The quickest way to create a timelapse video is put all the images in one folder and click 'Create Timelapse' button. <b>Thats It!!</b>
                         <br/><br/>
                         </div>
                 </Col>
@@ -27,7 +27,7 @@ const FeatureCreateTimelapse = (props) => (
         <Row>
                 <Col>
                 <div className="txtStyle">
-                        Once the images folder is selected the <b>Create Timelapse</b> button will get enabled. And all you ya to then do is press it!
+                        Once the images folder is selected the <b>Create Timelapse</b> button will get enabled. And all you to do is click it!
                         <br/><br/>
                 </div>
                 </Col>
