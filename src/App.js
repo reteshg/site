@@ -4,10 +4,11 @@ import Navigation from './components/navigation';
 import Home from './components/home';
 import FeatureList from './components/featureList';
 import FeatureCreateTimelapse from './components/featureCreateTimelapse';
-import featureVideoSettings from './components/featureVideoSettings';
+import FeatureVideoSettings from './components/featureVideoSettings';
+import FeatureAudioSettings from './components/featureAudioSettings';
 import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import FeatureVideoSettings from './components/featureVideoSettings';
+
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/featureList" render={() => <FeatureList title="Feature List" />} />
         <Route path="/featureCreateTimelapse" render={() => <FeatureCreateTimelapse title="Create Timelapse" />} />
         <Route path="/featureVideoSettings" render={() => <FeatureVideoSettings title="Video Settings" />} />
+        <Route path="/featureAudioSettings" render={() => <FeatureAudioSettings title="Audio Settings" />} />
       </div>
       <div>
       <Footer/>

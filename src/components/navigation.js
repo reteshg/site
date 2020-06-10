@@ -19,7 +19,7 @@ const Navigation = (props) => (
         <NavDropdown.Divider />
         <NavDropdown.Item eventkey={2} as={Link} to="/featureCreateTimelapse">Create Timelapse</NavDropdown.Item>
         <NavDropdown.Item eventkey={3} as={Link} to="/featureVideoSettings">Video Settings</NavDropdown.Item>
-        <NavDropdown.Item eventkey={4} as={Link} to="/features">Audio Settings</NavDropdown.Item>
+        <NavDropdown.Item eventkey={4} as={Link} to="/featureAudioSettings">Audio Settings</NavDropdown.Item>
         <NavDropdown.Item eventkey={5} as={Link} to="/features">Intro-Credit Slides</NavDropdown.Item>
         </NavDropdown>
       </NavItem>  

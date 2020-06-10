@@ -87,6 +87,7 @@ const FeatureVideoSettings = (props) => (
         </Row>        
 <Row>
         <Col>
+        <br/>
         <p>
                                 <b>Edge to Edge:</b> This option will resize the images and no black edges will be added. However, in order to do so the images will get cropped from the bottom. Please refer to image below for better understanding.
                         </p>
