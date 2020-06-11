@@ -20,7 +20,7 @@ function App() {
       <div className="App">
         <Navigation title="The Timelapse App"/>
         <Route exact path="/" render={() => <Home title="The Timelapse App" />} />
-        <Route path="/featureList" render={() => <FeatureList title="Feature List" />} />
+        <Route path="/featureList" render={() => <FeatureList title="The Idea!" />} />
         <Route path="/featureCreateTimelapse" render={() => <FeatureCreateTimelapse title="Create Timelapse" />} />
         <Route path="/featureVideoSettings" render={() => <FeatureVideoSettings title="Video Settings" />} />
         <Route path="/featureAudioSettings" render={() => <FeatureAudioSettings title="Audio Settings" />} />

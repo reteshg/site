@@ -12,6 +12,24 @@ const FeatureList = (props) => (
         <Row>
                 <Col>
                         <p>
+                                There are hunders or thousands of pictures clicked today by all of us. For some creative minds the pictures are clicked from multiple cameras, it can be a mobile phone or a DSLR or even a GoPro. All of these pictures when come together can tell a story, a story that can be lived or experienced time and again in just a few seconds!                                
+                        </p>
+                        <p>
+                                The Timelapse App enables the most simple way to use your pictures, add music, add title and credit people who made that memory happen and create an amazing timelapse video in just a couple of minutes!
+                        </p>
+                        <p>
+                                Imagine to build a story of your all pictures you might have clicked of your child from his birth till today! Or, how about re-living the your travel experince and giving your pictures some motion.
+                        </p>
+                        <p>
+                                The Timelapse App does some magical things for you and create a timlapse video in minutes with the following features:
+                        </p>
+
+                        </Col>
+                        </Row>
+
+        <Row>
+                <Col>
+                        <p>
                                 <b>Create Timelapse:</b> This is the most simple way to create any timelapse video. Simply put you images in folder and click the <b>Create Timelapse</b> button. You can add all the images clicked from multiple cameras like your phone, DSLR, GoPro etc.
                         </p>
                 </Col>
