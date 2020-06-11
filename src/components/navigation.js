@@ -12,11 +12,12 @@ const Navigation = (props) => (
     <Navbar.Toggle />
     <Navbar.Collapse className="justify-content-end">
     <Nav>
-      
+    <NavItem>
+        <Nav.Link eventkey={1} as={Link} to="/featureList">The Idea!</Nav.Link>
+      </NavItem>  
+
       <NavItem>
       <NavDropdown title="Features" id="basic-nav-dropdown">
-        <NavDropdown.Item eventkey={1} as={Link} to="/featureList">Features List</NavDropdown.Item>
-        <NavDropdown.Divider />
         <NavDropdown.Item eventkey={2} as={Link} to="/featureCreateTimelapse">Create Timelapse</NavDropdown.Item>
         <NavDropdown.Item eventkey={3} as={Link} to="/featureVideoSettings">Video Settings</NavDropdown.Item>
         <NavDropdown.Item eventkey={4} as={Link} to="/featureAudioSettings">Audio Settings</NavDropdown.Item>

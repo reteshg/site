@@ -7,6 +7,7 @@ import FeatureCreateTimelapse from './components/featureCreateTimelapse';
 import FeatureVideoSettings from './components/featureVideoSettings';
 import FeatureAudioSettings from './components/featureAudioSettings';
 import FeatureIntroCredit from './components/featureIntroCredit';
+import PrivacyPolicy from './components/privacyPolicy';
 import Faqs from './components/faqs';
 import Footer from './components/footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -25,6 +26,7 @@ function App() {
         <Route path="/featureAudioSettings" render={() => <FeatureAudioSettings title="Audio Settings" />} />
         <Route path="/featureIntroCredit" render={() => <FeatureIntroCredit title="Intro/Credit Slides" />} />
         <Route path="/faqs" render={() => <Faqs title="FAQs" />} />
+        <Route path="/privacyPolicy" render={() => <PrivacyPolicy title="Privacy Policy" />} />
       </div>
       <div>
       <Footer/>
