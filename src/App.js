@@ -1,5 +1,5 @@
 import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Route, HashRouter} from 'react-router-dom';
 import Navigation from './components/navigation';
 import Home from './components/home';
 import FeatureList from './components/featureList';
@@ -17,10 +17,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter>
       <div className="App">
         <Navigation title="The Timelapse App"/>
         <Route exact path="/" render={() => <Home title="The Timelapse App" />} />
-        <Route path="/featureList" render={() => <FeatureList title="The Idea!" />} />
+        <Route exact path="/featureList" render={() => <FeatureList title="The Idea!" />} />
         <Route path="/featureCreateTimelapse" render={() => <FeatureCreateTimelapse title="Create Timelapse" />} />
         <Route path="/featureVideoSettings" render={() => <FeatureVideoSettings title="Video Settings" />} />
         <Route path="/featureAudioSettings" render={() => <FeatureAudioSettings title="Audio Settings" />} />
@@ -31,6 +32,7 @@ function App() {
       <div>
       <Footer/>
       </div>
+      </HashRouter>
     </BrowserRouter>
   );
 }
