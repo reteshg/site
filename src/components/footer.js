@@ -3,8 +3,9 @@ import { Container, Row,Col } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import './footer.css';
 
-const Footer=()=>(
-            <Container>
+function Footer(){
+    return(
+        <Container>
                 <Row>
                     <p style={{padding:'20px'}}></p>
                 </Row>
@@ -18,6 +19,8 @@ const Footer=()=>(
                 </Row>
                 
             </Container>
-);
+    )
+}
+
 
 export default Footer;

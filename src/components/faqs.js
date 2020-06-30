@@ -1,8 +1,9 @@
 import React from 'react';
 import {Container,Row,Col,Accordion,Card,Button} from 'react-bootstrap';
 
-const Faqs = (props) => (
-    <Container>
+function Faqs(props){
+    return(
+        <Container>
         <Row>
             <Col>
                 <div className="titleRow">{props.title}</div>
@@ -65,6 +66,8 @@ const Faqs = (props) => (
             </Col>
         </Row>
 </Container>
-);
+
+    )
+}
 
 export default Faqs;

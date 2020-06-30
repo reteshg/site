@@ -2,7 +2,8 @@ import React from 'react';
 import {Container,Row,Col,Image} from 'react-bootstrap';
 import './featureComponents.css';
 
-const FeatureIntroCredit = (props) => (
+function FeatureIntroCredit(props){
+        return(
 <Container>
         <Row>
                 <Col>
@@ -62,6 +63,7 @@ const FeatureIntroCredit = (props) => (
 
         
 </Container>
-);
+        )
+}
 
 export default FeatureIntroCredit;

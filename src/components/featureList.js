@@ -2,8 +2,9 @@ import React from 'react';
 import {Container,Row,Col} from 'react-bootstrap';
 import './featureComponents.css';
 
-const FeatureList = (props) => (
-<Container>
+function FeatureList(props){
+        return(
+                <Container>
         <Row>
                 <Col>
                         <div className="titleRow"><b>{props.title}</b></div>
@@ -76,6 +77,9 @@ const FeatureList = (props) => (
 
 
 </Container>
-);
+        )
+}
+//const FeatureList = (props) => (
+//);
 
 export default FeatureList;

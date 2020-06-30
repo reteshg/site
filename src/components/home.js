@@ -3,9 +3,9 @@ import {Container,Row,Col} from 'react-bootstrap';
 import './home.css';
 
 
-const Home = (props) => (
-    
-    <Container fluid>
+function Home(props){
+    return(
+<Container fluid>
         <Row className="justify-content-center">
             <Col sm={1} lg={3}></Col>
             <Col sm={10} lg={6}>
@@ -23,7 +23,8 @@ const Home = (props) => (
         
         
     </Container>
+    )
+}
     
-);
 
 export default Home;

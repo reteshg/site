@@ -2,7 +2,8 @@ import React from 'react';
 import {Container,Row,Col} from 'react-bootstrap';
 import './featureComponents.css';
 
-const PrivcyPolicy=(props)=>(
+function PrivacyPolicy(props){
+    return(
 <Container>
     <Row>
         <Col>
@@ -43,7 +44,7 @@ const PrivcyPolicy=(props)=>(
     
     
 </Container>
+    )
+}
 
-);
-
-export default PrivcyPolicy;
+export default PrivacyPolicy;

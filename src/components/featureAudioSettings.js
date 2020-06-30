@@ -2,8 +2,9 @@ import React from 'react';
 import {Container,Row,Col,Image} from 'react-bootstrap';
 import './featureComponents.css';
 
-const FeatureAudioSettings = (props) => (
-<Container>
+function FeatureAudioSettings(props){
+        return(
+                <Container>
         <Row>
                 <Col>
                         <div className="titleRow">{props.title}</div>
@@ -28,6 +29,7 @@ const FeatureAudioSettings = (props) => (
               
         
 </Container>
-);
+        )
+}
 
 export default FeatureAudioSettings;

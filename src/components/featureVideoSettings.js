@@ -2,7 +2,8 @@ import React from 'react';
 import {Container,Row,Col,Image,ListGroup} from 'react-bootstrap';
 import './featureComponents.css';
 
-const FeatureVideoSettings = (props) => (
+function FeatureVideoSettings(props){
+        return(
 <Container>
         <Row>
                 <Col>
@@ -106,6 +107,7 @@ const FeatureVideoSettings = (props) => (
         </Row>        
 
 </Container>
-);
+        )
+}
 
 export default FeatureVideoSettings;

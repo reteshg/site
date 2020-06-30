@@ -2,8 +2,9 @@ import React from 'react';
 import {Container,Row,Col,Image} from 'react-bootstrap';
 import './featureComponents.css';
 
-const FeatureCreateTimelapse = (props) => (
-<Container>
+function FeatureCreateTimelapse(props){
+        return(
+            <Container>
         <Row>
                 <Col>
                         <div className="titleRow">{props.title}</div>
@@ -40,7 +41,8 @@ const FeatureCreateTimelapse = (props) => (
                 </Col>
         </Row>        
         
-</Container>
-);
+</Container>    
+        )
+}
 
 export default FeatureCreateTimelapse;
