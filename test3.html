@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HyperLocal Ad</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: transparent;
+            font-family: Arial, sans-serif;
+        }
+        .padding-container {
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            width: 250px;
+            height: 200px;
+        }
+        .ad-container {
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8cmVzdGF1cmFudHx8fHx8fDE2ODU1NzE1ODQ&ixlib=rb-4.0.3&q=80&w=1080');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .overlay {
+            background-color: rgba(0,0,0,0.6);
+            width: 100%;
+            padding: 10px 0;
+            text-align: center;
+            transform: translateY(100%);
+            transition: transform 0.5s ease-in-out;
+        }
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+        .tagline {
+            font-size: 14px;
+            color: #ffffff;
+        }
+        .animated {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="padding-container">
+        <div class="ad-container">
+            <div class="overlay">
+                <div class="logo">HyperLocal</div>
+                <div class="tagline">Discover Your Neighborhood</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const overlay = document.querySelector('.overlay');
+
+            function animate() {
+                overlay.classList.remove('animated');
+
+                setTimeout(() => {
+                    overlay.classList.add('animated');
+                }, 500);
+
+                setTimeout(() => {
+                    overlay.classList.remove('animated');
+                }, 4500);
+            }
+
+            // Initial animation
+            animate();
+
+            // Loop the animation
+            setInterval(animate, 5000);
+        });
+    </script>
+</body>
+</html>

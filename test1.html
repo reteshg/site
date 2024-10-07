@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumbo Ad</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background-color: transparent;
+            font-family: Arial, sans-serif;
+        }
+        .padding-container {
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            width: 250px;
+            height: 200px;
+        }
+        .ad-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #0066cc;
+            color: white;
+            overflow: hidden;
+        }
+        .logo {
+            font-size: 48px;
+            font-weight: bold;
+            opacity: 0;
+            transform: scale(0.5);
+            transition: all 1s ease-in-out;
+        }
+        .tagline {
+            font-size: 20px;
+            text-align: center;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 1s ease-in-out;
+            margin-top: 10px;
+        }
+        .animated {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <div class="padding-container">
+        <div class="ad-container">
+            <div class="logo">JUMBO</div>
+            <div class="tagline">Think Big,<br>Go Jumbo!</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const logo = document.querySelector('.logo');
+            const tagline = document.querySelector('.tagline');
+
+            function animate() {
+                logo.classList.remove('animated');
+                tagline.classList.remove('animated');
+
+                setTimeout(() => {
+                    logo.classList.add('animated');
+                }, 500);
+
+                setTimeout(() => {
+                    tagline.classList.add('animated');
+                }, 1500);
+            }
+
+            // Initial animation
+            animate();
+
+            // Loop the animation
+            setInterval(animate, 5000);
+        });
+    </script>
+</body>
+</html>
